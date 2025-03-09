@@ -1,0 +1,173 @@
+/* background and general theme */
+body {
+    font-family: 'Roboto', bold, monospace;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center align items vertically */
+    min-height: 0vh; /* Ensure body takes full viewport height */
+    background-color: black !important;
+    background-image: none !important;
+}
+
+/* main container */
+.container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/* profile section (nickname, picture, and description) */
+.profile-section {
+    max-width: 90%;
+    background-color: #000;
+    border: 2px solid #800020;
+    display: flex;
+    flex-direction: column; /* Fix center alignment */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+/* profile picture */
+.profile-pic {
+    border: 2px solid #BFBFBF;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    margin: 0 auto 15px auto; /* Centers it */
+}
+
+/* description styling */
+.bio {
+    font-size: 16px;
+    background-color: #000;
+    color: #3B3B3B;
+    padding: 10px;
+    border: 2px solid #BFBFBF;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+/* bio styling */
+.about-me {
+    font-size: 16px;
+    color: #BFBFBF;
+    background-color: #000;
+    padding: 10px;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* 'about me' section individual bits styling */
+.about-me ul {
+  list-style: none;
+  color: #BFBFBF;
+  padding: 0;
+}
+
+.about-me li {
+  margin-bottom: 0.5rem;
+  color: #BFBFBF;
+}
+
+.about-me a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.about-me a:hover {
+  text-decoration: underline;
+}
+
+/* blog section styling */
+.blog-section {
+    width: 45%; /* Adjusts size to fit next to profile */
+    min-width: 300px;
+    background-color: #3b3b3b;
+    border: 2px solid #FFF;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* 'blog section' individual bits styling */
+.blog-post {
+    background-color: #000; /* Subtle grey background for posts */
+    color: #BFBFBF;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/* old and primarily unused, used for something else for now */
+.stamps {
+    background-color: #000;
+    border: 1px solid #BFBFBF;
+    margin-top: 8px;
+    font-size: 0.85em;
+    color: #666;
+    text-align: center;
+}
+
+.scrolling-text {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    top: 10px; /* Adjust this so it doesn’t go over stuff */
+    left: 0;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Left Ads | Main Content | Right Ads */
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ad-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.blog-section img {
+    max-width: 100%; /* Images won't be wider than their container */
+    height: auto; /* Keeps aspect ratio */
+    width: auto; /* Prevents weird stretching */
+    display: block; /* Removes extra space from inline elements */
+    margin: 0 auto; /* Centers the images */
+}
+
+.blog-post img {
+    max-width: 100%; /* Images won't be wider than their container */
+    height: auto; /* Keeps aspect ratio */
+    width: auto; /* Prevents weird stretching */
+    display: block; /* Removes extra space from inline elements */
+    margin: 0 auto; /* Centers the images */
+}
+
+.neolink-iframe {
+    width: 180px !important;
+    height: 180px !important;
+    min-width: 180px;
+    min-height: 180px;
+    max-width: 180px;
+    max-height: 180px;
+    border: none;
+    display: block; /* Prevents any inline weirdness */
+}
+
